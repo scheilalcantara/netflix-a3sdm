@@ -1,0 +1,654 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+ 
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    margin: none;
+    border: none;
+    overflow: hidden;
+  }
+  .menu {
+    position: absolute;
+    width: 1058.172px;
+    height: 74.932px;
+    margin: 20.634px 0 0 49.955px;
+    z-index: 29;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 31;
+  }
+
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    position: absolute;
+    width: 66px;
+    height: 34.43px;
+    top: 20.091px;
+    left: 134.118px;
+    padding: 2.715px 0 2.715px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 33;
+  }
+  .inicio:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .bombando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    position: absolute;
+    width: 142px;
+    height: 34.43px;
+    top: 20.091px;
+    left: 555.475px;
+    padding: 2.715px 0 2.715px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 29px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .bombando:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    position: absolute;
+    width: 82px;
+    height: 34.43px;
+    top: 20.091px;
+    left: 408.326px;
+    padding: 2.715px 0 2.715px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 29px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 37;
+  }
+  .filmes:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    position: absolute;
+    width: 78px;
+    height: 34.43px;
+    top: 20.091px;
+    left: 264.977px;
+    padding: 2.715px 0 2.715px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 29px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .series:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .minha-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    position: absolute;
+    width: 135px;
+    height: 34.43px;
+    top: 20.091px;
+    left: 762.353px;
+    padding: 2.715px 0 2.715px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 29px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .minha-lista:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .amigos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.43px;
+    width: 96px;
+    height: 36.602px;
+    top: 20.091px;
+    left: 962.172px;
+    padding: 3.801px 0 3.801px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 29px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 43;
+  }
+  .amigos:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+
+  .main {
+    position: relative;
+    width: 554.932px;
+    height: 374.309px;
+    margin: 242.172px 0 0 84.706px;
+    z-index: 13;
+    overflow: visible auto;
+  }
+  .title-dark {
+    position: relative;
+    width: 554.932px;
+    height: 286.852px;
+    margin: 0 0 0 0;
+    z-index: 23;
+    overflow: visible auto;
+  }
+  .flex-row {
+    position: relative;
+    width: 349.619px;
+    height: 149.585px;
+    margin: 0 0 0 0;
+    z-index: 28;
+  }
+  .mini-logo {
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    background: url(img/logo.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 24;
+  }
+  .title-series {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 21.705px;
+    top: 19.945px;
+    left: 36.956px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 17.598270416259766px;
+    font-weight: 400;
+    line-height: 18.126px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .dark {
+    position: absolute;
+    width: 349.619px;
+    height: 119.082px;
+    top: 30.504px;
+    left: 0;
+    font-family: Leelawadee UI, var(--default-font-family);
+    font-size: 87.99134826660156px;
+    font-weight: 400;
+    line-height: 117.035px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    letter-spacing: 28.16px;
+    z-index: 27;
+  }
+  .da {
+    position: relative;
+    color: #ffffff;
+    font-family: Leelawadee UI, var(--default-font-family);
+    font-size: 87.99134826660156px;
+    font-weight: 400;
+    line-height: 117.035px;
+    text-align: left;
+    letter-spacing: 28.16px;
+  }
+  .r {
+    position: relative;
+    color: #ffffff;
+    font-family: Leelawadee UI, var(--default-font-family);
+    font-size: 87.99134826660156px;
+    font-weight: 400;
+    line-height: 117.035px;
+    text-align: left;
+    letter-spacing: 28.16px;
+  }
+  .k {
+    position: relative;
+    color: #ffffff;
+    font-family: Leelawadee UI, var(--default-font-family);
+    font-size: 87.99134826660156px;
+    font-weight: 400;
+    line-height: 117.035px;
+    text-align: left;
+    letter-spacing: 28.16px;
+  }
+ 
+  .sinopse {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 554.932px;
+    height: 98.55px;
+    margin: 38.716px 0 0 0;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 24.43438720703125px;
+    font-weight: 400;
+    line-height: 27.167px;
+    text-align: left;
+    z-index: 24;
+  }
+  .flex-row-aaca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 535.128px;
+    height: 48.741px;
+    margin: 38.716px 0 0 0;
+    z-index: 20;
+  }
+  .btn-assistir  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.137px;
+    position: relative;
+    width: 136.117px;
+    height: 48.155px;
+    padding: 8.989px 15.41px 8.989px 15.41px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    z-index: 20;
+    border-radius: 5.137px;
+    box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-assistir span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 60px;
+    height: 28px;
+    color: #000000;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 18.771486282348633px;
+    font-weight: 450;
+    line-height: 28px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 22;
+  }
+  .btn-assistir:hover {
+    background-color:#333333;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+
+  }
+  .btn-assistir span:hover{
+    color: #ffffff;
+  }
+
+
+  .polygon {
+    flex-shrink: 0;
+    position: relative;
+    width: 13.483px;
+    height: 16.052px;
+    background: url()
+      no-repeat center;
+    background-size: cover;
+    z-index: 21;
+  }
+  
+  .btn-minha-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.137px;
+    position: relative;
+    width: 171.431px;
+    height: 48.155px;
+    padding: 8.989px 15.41px 8.989px 15.41px;
+    cursor: pointer;
+    background: #5e5e5e;
+    border: none;
+    z-index: 14;
+    border-radius: 5.137px;
+    box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .btn-minha-lista span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 97.377px;
+    height: 26.397px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 18.771486282348633px;
+    font-weight: 400;
+    line-height: 26.397px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 16;
+  }
+  .btn-minha-lista:hover {
+    background-color:#333333;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+  }
+
+
+  .mais {
+    flex-shrink: 0;
+    position: relative;
+    width: 15.252px;
+    height: 15.252px;
+    background: url()
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 15;
+  }
+   
+  .btn-recomendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.137px;
+    position: relative;
+    width: 171.431px;
+    height: 48.155px;
+    padding: 8.989px 15.41px 8.989px 15.41px;
+    cursor: pointer;
+    background: #5e5e5e;
+    border: none;
+    z-index: 17;
+    border-radius: 5.137px;
+    box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
+  }
+  .btn-recomendar span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 113.802px;
+    height: 32.263px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 18.771486282348633px;
+    font-weight: 400;
+    line-height: 32.263px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 19;
+  }
+  .btn-recomendar:hover {
+    background-color:#333333;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+  }
+
+
+  .send {
+    flex-shrink: 0;
+    position: relative;
+    width: 17.012px;
+    height: 17.012px;
+    background: url()
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 18;
+  }
+
+  .populares-na-netflix {
+    display: block;
+    position: relative;
+    height: 29px;
+    margin: 112.207px 0 0 84.706px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28.235292434692383px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 29;
+  }
+  .catalogo {
+    position: relative;
+    width: 2159.245px;
+    height: 186.787px;
+    margin: 32.9px 0 0 -21.176px;
+    z-index: 2;
+  }
+
+  .love-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 724.887px;
+    z-index: 3;
+    border: none;
+    background: none;
+    border-radius: 13.575px;
+  }
+  .love-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+  }
+
+
+  .you-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 1086.516px;
+    z-index: 4;
+    border: none;
+    background: none;
+    border-radius: 13.575px;
+  }
+  .you-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13px; 
+  }
+
+
+  .blade-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 1448.145px;
+    z-index: 5;
+    border: none;
+    background: none;
+    border-radius: 13.575px;
+  }
+  .blade-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13px; 
+  }
+
+
+  .soho-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 1809.774px;
+    z-index: 7;
+    border: none;
+    background: none;
+    border-radius: 13.575px;
+  }
+  .soho-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13px; 
+  }
+
+
+  .frag-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 363.258px;
+    z-index: 9;
+    border: none;
+    background: none;
+    border-radius: 13.575px;
+  }
+  .frag-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+  }
+
+
+  .walk-recom {
+    position: absolute;
+    width: 349.471px;
+    height: 186.787px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-radius: 13.575px;
+    border:none;
+  }
+  .walk-recom:hover{
+    outline: #ffffff solid 3px;
+    border-radius: 13.575px;
+  }
+  
+
+  .background {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+    margin: 0%;
+  }
+  
