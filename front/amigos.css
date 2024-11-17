@@ -5,15 +5,6 @@
       "Source Han Sans CN", sans-serif;
   }
   
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
   input,
   select,
   textarea,
@@ -22,12 +13,10 @@
   }
   
   .main-container {
-    position: relative;
-    width: 1920px;
-    height: 1049.72px;
-    margin: 0 auto;
-    font-size: 0px;
-    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #141414;
     overflow: hidden;
   }
   .recomendacoes-recentes {
@@ -42,16 +31,8 @@
     line-height: 32.616px;
     text-align: left;
     white-space: nowrap;
-    z-index: 16;
   }
-  .rectangle {
-    position: absolute;
-    width: 1920px;
-    height: 1049.72px;
-    top: 0;
-    left: 0;
-    background: #141414;
-  }
+
   .retang-menu {
     position: absolute;
     width: 1920px;
@@ -59,7 +40,7 @@
     top: 0;
     left: 0;
     background: #080808;
-    z-index: 4;
+    
   }
   .menu {
     position: absolute;
@@ -67,56 +48,26 @@
     height: 72.831px;
     top: 20.055px;
     left: 48.554px;
-    z-index: 17;
   }
   .logo {
     position: absolute;
-    width: 67.026px;
-    height: 72.831px;
     top: 0;
     left: 0;
-    background: url(./assets/images/0041764914b9dc1dfcbcdd51b3e386ee8ac44cca.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 18;
   }
   .mini-perfil {
     position: absolute;
-    width: 58.054px;
-    height: 58.054px;
+    width: 58px;
+    height: 58px;
     top: 7.389px;
     left: 1685.802px;
     background: #d9232e;
-    z-index: 31;
   }
   .sino {
     position: absolute;
-    width: 34.305px;
-    height: 34.305px;
     top: 17.944px;
     left: 1580.249px;
-    z-index: 33;
   }
-  .vector {
-    position: relative;
-    width: 38.117px;
-    height: 29.545px;
-    margin: -1.906px 0 0 -1.906px;
-    background: url(./assets/images/03b7e7cb-8f53-417f-a0d8-f88e0b8a6b3d.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 34;
-  }
-  .vector-1 {
-    position: relative;
-    width: 10.406px;
-    height: 5.521px;
-    margin: 3.05px 0 0 11.949px;
-    background: url(./assets/images/0a273e17-b8bd-4748-bc4e-f6b454a33cb8.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 35;
-  }
+
   .inicio {
     display: flex;
     flex-direction: column;
@@ -130,80 +81,22 @@
     top: 19.527px;
     left: 130.357px;
     padding: 2.639px 0 2.639px 0;
-    z-index: 19;
-  }
-  .inicio-2 {
     flex-shrink: 0;
     flex-basis: auto;
-    position: relative;
     height: 28px;
     color: #ffffff;
     font-family: Questrial, var(--default-font-family);
-    font-size: 27.443649291992188px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
     white-space: nowrap;
-    z-index: 20;
   }
-  .bombando {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 5.278px;
-    position: absolute;
-    width: 138px;
-    height: 33.278px;
-    top: 19.527px;
-    left: 539.901px;
-    padding: 2.639px 0 2.639px 0;
-    z-index: 21;
+  .inicio:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
   }
-  .bombando-3 {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 28px;
-    color: #ffffff;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 27.443649291992188px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 22;
-  }
-  .filmes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 5.278px;
-    position: absolute;
-    width: 80px;
-    height: 33.278px;
-    top: 19.527px;
-    left: 396.877px;
-    padding: 2.639px 0 2.639px 0;
-    z-index: 23;
-  }
-  .filmes-4 {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 28px;
-    color: #ffffff;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 27.443649291992188px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 24;
-  }
+
   .series {
     display: flex;
     flex-direction: column;
@@ -217,12 +110,8 @@
     top: 19.527px;
     left: 257.548px;
     padding: 2.639px 0 2.639px 0;
-    z-index: 25;
-  }
-  .series-5 {
     flex-shrink: 0;
     flex-basis: auto;
-    position: relative;
     height: 28px;
     color: #ffffff;
     font-family: Questrial, var(--default-font-family);
@@ -231,8 +120,70 @@
     line-height: 28px;
     text-align: left;
     white-space: nowrap;
-    z-index: 26;
   }
+  .series:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+  .filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.278px;
+    position: absolute;
+    width: 80px;
+    height: 33.278px;
+    top: 19.527px;
+    left: 396.877px;
+    padding: 2.639px 0 2.639px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 28px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .filmes:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
+  .bombando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5.278px;
+    position: absolute;
+    width: 138px;
+    height: 33.278px;
+    top: 19.527px;
+    left: 539.901px;
+    padding: 2.639px 0 2.639px 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 28px;
+    color: #ffffff;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .bombando:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
   .minha-lista {
     display: flex;
     flex-direction: column;
@@ -246,23 +197,21 @@
     top: 19.527px;
     left: 740.979px;
     padding: 2.639px 0 2.639px 0;
-    z-index: 27;
-  }
-  .minha-lista-6 {
-    flex-shrink: 0;
     flex-basis: auto;
-    position: relative;
     height: 28px;
     color: #ffffff;
     font-family: Questrial, var(--default-font-family);
-    font-size: 27.443649291992188px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
     white-space: nowrap;
-    z-index: 28;
   }
-  .amigos-7 {
+  .minha-lista:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+  .amigos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,22 +224,22 @@
     top: 19.527px;
     left: 935.195px;
     padding: 3.694px 0 3.694px 0;
-    z-index: 29;
-  }
-  .amigos-8 {
     flex-shrink: 0;
     flex-basis: auto;
-    position: relative;
     height: 28px;
     color: #ffffff;
     font-family: Questrial, var(--default-font-family);
-    font-size: 27.443649291992188px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
     white-space: nowrap;
-    z-index: 30;
   }
+  .amigos:hover {
+    border-bottom:#ffffff solid 2px ;
+    cursor:pointer;
+  }
+
   .lupa {
     position: absolute;
     width: 2.04%;
@@ -404,16 +353,16 @@
     white-space: nowrap;
     z-index: 5;
   }
-  .retang {
+  .retang-first-line {
     position: absolute;
     width: 1920px;
-    height: 229.049px;
+    height: 215px;
     top: 293.964px;
     left: 0;
     background: #292929;
-    z-index: 1;
   }
-  .fil-recom {
+
+  .first-line-recom {
     position: absolute;
     width: 1043.708px;
     height: 181.55px;
@@ -421,56 +370,55 @@
     left: 854.448px;
     z-index: 37;
   }
-  .recom {
+  .here-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
     left: 0;
     z-index: 38;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recom-b {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url(./assets/images/cc2578db-19c5-4324-a37b-3d5373ff0af3.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 39;
-    border-radius: 13.194px;
+  .here-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
-  .recom-c {
+ 
+  .flash-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 352.018px;
+    left: 340.54px;
     z-index: 40;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recom-d {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url(./assets/images/a0165889a0aff7584b736f6cc1efb1d6769fd1c6.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 41;
-    border-radius: 13.194px;
+  .flash-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
-  .recom-e {
+
+  .mirror-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 704.035px;
-    background: url(./assets/images/1acfde4a-2719-40d1-9000-73abb85a2282.png)
-      no-repeat center;
-    background-size: cover;
+    left: 681.08px;
     z-index: 42;
+    border: none;
+    background:none;
+    border-radius: 13px;
+  }
+  .mirror-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
   .perfis {
     position: absolute;
@@ -587,65 +535,73 @@
     white-space: nowrap;
     z-index: 7;
   }
-  .rectangle-12 {
+  .retang-second-line{
     position: absolute;
     width: 1920px;
-    height: 229.049px;
-    top: 549.401px;
+    height: 215px;
+    top: 535px;
     left: 0;
     background: #292929;
-    z-index: 3;
+    
   }
-  .recommendation {
+  .second-line-recom {
     position: absolute;
     width: 1043.708px;
     height: 181.55px;
-    top: 573.678px;
+    top: 557px;
     left: 854.448px;
     z-index: 43;
   }
-  .recommendation-13 {
+  .umbre-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
     left: 0;
-    background: url(./assets/images/bb009171-23a3-4e2e-88b2-f722d9f0b56e.png)
-      no-repeat center;
-    background-size: cover;
     z-index: 44;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recommendation-14 {
+  .umbre-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  
+  .rua-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 352.018px;
-    background: url(./assets/images/7307b78a-6b99-4fea-a2c4-728c845ea186.png)
-      no-repeat center;
-    background-size: cover;
+    left: 340.54px;
     z-index: 45;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recommendation-15 {
-    position: absolute;
-    width: 339.673px;
-    height: 181.55px;
-    top: 0;
-    left: 704.035px;
-    z-index: 46;
+  .rua-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
-  .recommendation-16 {
+  .community-recom {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 0;
-    background: url(./assets/images/3404b9276c24613732eaf80de5e07cf62b868828.png)
-      no-repeat center;
-    background-size: cover;
+    left: 681.08px;
     z-index: 47;
-    border-radius: 13.194px;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
+  .community-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
   .joao-silva {
     display: flex;
     align-items: flex-start;
@@ -723,73 +679,72 @@
     white-space: nowrap;
     z-index: 8;
   }
-  .retang-1a {
+  .retang-third-line {
     position: absolute;
     width: 1920px;
-    height: 229.049px;
-    top: 805.366px;
+    height: 215px;
+    top: 777px;
     left: 0;
-    background: #292929;
-    z-index: 2;
+    background: #292929; 
   }
-  .fil-recom-1b {
+
+  .third-line-recom {
     position: absolute;
     width: 1043.708px;
     height: 181.55px;
-    top: 829.115px;
+    top: 797px;
     left: 854.448px;
     z-index: 48;
   }
-  .recom-1c {
+  .office-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
     left: 0;
-    z-index: 49;
-  }
-  .recom-1d {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url(./assets/images/a51edf9bb2e6113ff4d391148dd9328d3c250b50.png)
-      no-repeat center;
-    background-size: cover;
     z-index: 50;
-    border-radius: 13.194px;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recom-1e {
-    position: absolute;
-    width: 339.673px;
-    height: 181.55px;
-    top: 0;
-    left: 352.018px;
-    z-index: 51;
+  .office-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
-  .recom-1f {
+
+  .break-recom {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 0;
-    background: url(./assets/images/539d13a1e256d8e079b3fa7d82f0b53794a49852.png)
-      no-repeat center;
-    background-size: cover;
+    left: 340.54px;
     z-index: 52;
-    border-radius: 13.194px;
+    border: none;
+    background: none;
+    border-radius: 13px;
   }
-  .recom-20 {
+  .break-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
+  
+  }
+  .orange-recom {
     position: absolute;
-    width: 339.673px;
-    height: 181.55px;
+    width: 320.54px;
+    height: 171.32px;
     top: 0;
-    left: 704.035px;
-    background: url(./assets/images/62a6fa20-b0b3-4b5e-8337-31ec63a34a08.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 53;
+    left: 681.08px;
+    z-index: 53;  
+    border: none;
+    background: none;
+    border-radius: 13px;
+  }
+  .orange-recom:hover {
+    outline: #ffffff solid 3px;
+    border-radius: 13px;
+    cursor: pointer;
   }
   .amanda-ribeiro {
     display: flex;

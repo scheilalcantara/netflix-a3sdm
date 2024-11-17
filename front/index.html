@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Netflix</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Leelawadee+UI:wght@400&display=swap" />
     <link rel="stylesheet" href="index.css" />
@@ -26,17 +27,24 @@
         <div class="minha-lista">Minha lista</span></div>
 
         <div class="amigos">
-          <a href="amigos.html" style="text-decoration: none;color: #ffff;">Amigos</a></div>
+          <a href="amigos.html" 
+             style="text-decoration: none;color: #ffff;">
+             Amigos</a></div>
 
       </div>
-      <div class="main">
-        <div class="title-dark">
-          <div class="flex-row">
-            <div class="mini-logo"></div>
-            <span class="title-series">S É R I E S</span>
-            <div class="dark">
-              <span class="da">DA</span><span class="r">R</span
-              ><span class="k">K</span>
+      <div class="principal">
+        <div class="txts-principais">
+          <div class="box-dark">
+
+            <div class="mini-logo">
+            <img src="img/logo.png"
+                 width="25px" 
+                 height="30px"></div>
+
+            <span class="lbl-series"> SÉRIES </span>
+            
+            <div class="lbl-dark">
+              <span> DARK </span>
             </div>
            
           </div>
@@ -66,69 +74,49 @@
 
       <div class="catalogo">
 
-        <button class="love-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/love-recom.png" 
-              alt="love death plus robots" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
+        <button class="walk-recom"
+                style="background-image: url('img/walk-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
         </button>
 
-        <button class="you-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/you-recom.png" 
-              alt="you" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
+        <button class="frag-recom"
+                style="background-image: url('img/frag-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
+        </button>
+        
+        <button class="love-recom"  
+                style="background-image: url('img/love-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
         </button>
 
-        <button class="blade-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/blade-recom.png" 
-              alt="blade runner 2049" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
+        <button class="you-recom"
+                style="background-image: url('img/you-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
         </button>
 
-        <button class="soho-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/soho-recom.png" 
-              alt="last night in soho" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
+        <button class="blade-recom"
+                style="background-image: url('img/blade-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
         </button>
 
-        <button class="frag-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/frag-recom.png" 
-              alt="fragmentado" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
-        </button>
-
-        <button class="walk-recom">
-          <a href="assistir.html"> 
-            <background> <img src="img/walk-recom.png" 
-              alt="the walking dead" 
-              width="349.473px" 
-              height="width: 186.787px"></background>
-          </a>
+        <button class="soho-recom"
+                style="background-image: url('img/soho-recom.png'); 
+                       background-size: cover;"
+                onclick="window.location.href='assistir.html';">
         </button>
 
         </div>
       </div>
-      <div class="background">
-        <background>
-          <img src="img/background.png"
-          alt="dark"
-          width="1920px";
-          height="1080px"></backgroud>
+     
+      <div class="background-container">
+        <img src="img/background.png" alt="background dark">
       </div>
+      
     </div>
     
   </body>
