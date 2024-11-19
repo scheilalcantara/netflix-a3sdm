@@ -22,13 +22,10 @@
   }
   
   .main-container {
-    position: relative;
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
-    background: url(../assets/images/7f12ea1300756f144a0fb5daaf68dbfc01103a46.png)
-      no-repeat center;
-    background-size: cover;
+    background-color: black;
     overflow: hidden;
   }
   .logo {
@@ -368,14 +365,7 @@
     white-space: nowrap;
     z-index: 2;
   }
-  .rectangle {
-    position: absolute;
-    width: 1975.385px;
-    height: 1080px;
-    top: 0;
-    left: 0;
-    background: #000000;
-  }
+
   .voltar-b {
     display: flex;
     flex-direction: column;
