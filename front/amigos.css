@@ -1,6 +1,6 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    --default-font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+      "Ubuntu", "Helvetica Neue", Helvetica, Arial, "PingFang SC",
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
       "Source Han Sans CN", sans-serif;
   }
@@ -19,14 +19,14 @@
     background: #141414;
     overflow: hidden;
   }
-  .recomendacoes-recentes {
+  .recom-recentes {
     display: block;
     position: relative;
     height: 33px;
     margin: 236.965px 0 0 854.448px;
     color: #ffffff;
     font-family: Questrial, var(--default-font-family);
-    font-size: 31.665748596191406px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 32.616px;
     text-align: left;
@@ -42,6 +42,7 @@
     background: #080808;
     
   }
+
   .menu {
     position: absolute;
     width: 1769.272px;
@@ -49,23 +50,29 @@
     top: 20.055px;
     left: 48.554px;
   }
+
   .logo {
     position: absolute;
     top: 0;
     left: 0;
   }
+
   .mini-perfil {
     position: absolute;
-    width: 58px;
-    height: 58px;
     top: 7.389px;
     left: 1685.802px;
-    background: #d9232e;
   }
+
   .sino {
     position: absolute;
     top: 17.944px;
     left: 1580.249px;
+  }
+
+  .lupa {
+    position: absolute;
+    top: 27.2%;
+    left: 83.25%;
   }
 
   .inicio {
@@ -240,113 +247,60 @@
     cursor:pointer;
   }
 
-  .lupa {
-    position: absolute;
-    width: 2.04%;
-    height: 48.84%;
-    top: 27.2%;
-    left: 83.25%;
-    background: url(./assets/images/02deecaa-fbc1-4116-81c4-c3bc74204b81.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 36;
-  }
-  .play {
-    position: absolute;
-    width: 16.573px;
-    height: 13.722px;
-    top: 34.305px;
-    left: 1752.699px;
-    background: url(./assets/images/eb00a682-7307-4f4c-b6a0-3c2120669e54.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 32;
-  }
+  
   .field-pesquisar {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     gap: 7.916px;
     position: absolute;
-    width: 411.655px;
-    height: 54.887px;
-    top: 166.245px;
-    left: 1405.959px;
+    width: 411px;
+    height: 45px;
+    top: 170px;
+    left: 1405px;
     padding: 6.333px 8.444px 6.333px 11.611px;
     background: #282828;
-    border: 1.583px solid #8a8888;
+    border: 1.583px solid #ffffff;
     z-index: 63;
     overflow: hidden;
-    border-radius: 4.222px;
+    border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  .line {
+
+  .lupa-field {
     flex-shrink: 0;
     position: absolute;
-    width: 1.583px;
-    height: 26.916px;
-    top: 12.666px;
-    left: 62.012px;
-    background: url(./assets/images/8935a1b0-168a-48f5-9edd-6d2157848651.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 64;
+    top: 17px;
+    left: 15px;
   }
-  .lupa-9 {
-    flex-shrink: 0;
-    position: absolute;
-    width: 7.03%;
-    height: 43.5%;
-    top: 24.41%;
-    left: 3.74%;
-    background: url(./assets/images/f9a56722-5c3a-4399-8fe4-71686bce6f1f.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 65;
-  }
-  .pesquisar-perfis {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: absolute;
-    width: 131.941px;
-    height: 31.666px;
-    top: 10.028px;
-    left: 69.137px;
-    color: #ffffff;
-    font-family: Inter, var(--default-font-family);
-    font-size: 16.81129264831543px;
-    font-weight: 500;
-    line-height: 31.666px;
-    text-align: right;
-    white-space: nowrap;
-    z-index: 66;
-  }
+
   .pesquisar-input {
     flex-shrink: 0;
+    padding: 3px 55px;
     position: absolute;
     width: 411.655px;
     height: 54.887px;
     top: -1.583px;
     left: -1.583px;
+    font-family: Inter, var(--default-font-family);
+    color: #ffffff;
+    font-size: 18px;
     background: transparent;
     border: none;
     z-index: 67;
     outline: none;
   }
-  .amigos-a {
+  .lbl-amigos{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
     height: 67.554px;
     top: 174.162px;
-    left: 68.609px;
+    left: 80px;
     color: #fff9f9;
     font-family: Questrial, var(--default-font-family);
-    font-size: 52.776248931884766px;
+    font-size: 48px;
     font-weight: 400;
     line-height: 54.36px;
     text-align: left;
@@ -424,58 +378,61 @@
     position: absolute;
     width: 150.94px;
     height: 663.113px;
-    top: 332.49px;
-    left: 68.609px;
+    top: 329px;
+    left: 80px;
     z-index: 12;
   }
-  .ft-perfil {
+  .perfil-1 {
     position: relative;
-    width: 150.94px;
-    height: 151.711px;
     margin: 0 0 0 0;
-    background: url(./assets/images/39518da13b08a45e164c9db7bb34c6d7f275efc4.png)
-      no-repeat center;
-    background-size: cover;
     z-index: 15;
   }
-  .ft-perfil-f {
+  .perfil-2 {
     position: relative;
-    width: 150.94px;
-    height: 151.711px;
-    margin: 102.143px 0 0 0;
-    background: url(./assets/images/ec53caffd9a09a1c1b3c878d1d1bee35e6c189d8.png)
-      no-repeat center;
-    background-size: cover;
+    margin: 90px 0 0 0;
     z-index: 14;
   }
-  .ft-perfil-10 {
+  .perfil-3 {
     position: relative;
-    width: 150.94px;
-    height: 151.711px;
-    margin: 105.837px 0 0 0;
-    background: url(./assets/images/5f38e5c6f3df80df5ddd0fe24b126a8a928d4513.png)
-      no-repeat center;
-    background-size: cover;
+    margin: 90px 0 0 0;
     z-index: 13;
   }
-  .felipe-santos {
+  .name-1 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
     height: 37.999px;
-    top: 360.99px;
-    left: 248.048px;
+    top: 354px;
+    left: 260px;
     color: #fff9f9;
     font-family: Questrial, var(--default-font-family);
-    font-size: 36.94337463378906px;
+    font-size: 33px;
     font-weight: 400;
-    line-height: 37.999px;
+    line-height: 38px;
     text-align: left;
     white-space: nowrap;
     z-index: 6;
   }
-  .undo-friendship {
+
+  .connected-days-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 22.166px;
+    top: 424px;
+    left: 260px;
+    color: #fff9f9;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .btn-undo-1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -484,8 +441,8 @@
     position: absolute;
     width: 217.438px;
     height: 79.164px;
-    top: 371.017px;
-    left: 576.844px;
+    top: 362px;
+    left: 560px;
     padding: 5.805px 12.666px 5.805px 12.666px;
     cursor: pointer;
     background: #1e1e1e;
@@ -494,47 +451,31 @@
     border-radius: 7.916px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  .undo {
+  .icon-undo-1 {
     flex-shrink: 0;
     position: relative;
-    width: 25.333px;
-    height: 20.583px;
-    background: url(./assets/images/951dd0df-ee76-4eac-b09f-85d956061931.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 55;
   }
-  .undo-friendship-11 {
+
+  .btn-undo-1 span {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
     height: 22px;
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
-    font-size: 14.777349472045898px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     text-align: left;
     white-space: nowrap;
     z-index: 56;
   }
-  .connected-days {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 22.166px;
-    top: 430.654px;
-    left: 249.104px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 22.16602325439453px;
-    font-weight: 400;
-    line-height: 22.166px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 7;
+
+  .btn-undo-1:hover {
+    background: #0D0D0D;
+
   }
+
   .retang-second-line{
     position: absolute;
     width: 1920px;
@@ -602,24 +543,43 @@
     cursor: pointer;
   }
 
-  .joao-silva {
+  .name-2 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
     height: 41.165px;
-    top: 617.482px;
-    left: 249.104px;
+    top: 596px;
+    left: 260px;
     color: #fff9f9;
     font-family: Questrial, var(--default-font-family);
-    font-size: 36.94337463378906px;
+    font-size: 33px;
     font-weight: 400;
-    line-height: 38.052px;
+    line-height: 38px;
     text-align: left;
     white-space: nowrap;
     z-index: 10;
   }
-  .undo-friendship-17 {
+
+  .connected-days-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 22.166px;
+    top: 666px;
+    left: 260px;
+    color: #fff9f9;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+  }
+
+  .btn-undo-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -628,8 +588,8 @@
     position: absolute;
     width: 217.438px;
     height: 79.164px;
-    top: 626.454px;
-    left: 576.844px;
+    top: 602px;
+    left: 560px;
     padding: 5.805px 12.666px 5.805px 12.666px;
     cursor: pointer;
     background: #1e1e1e;
@@ -638,47 +598,30 @@
     border-radius: 7.916px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  .undo-18 {
+  .icon-undo-2 {
     flex-shrink: 0;
     position: relative;
-    width: 25.333px;
-    height: 20.583px;
-    background: url(./assets/images/4e06ae5d-e908-4909-8684-c796269140b6.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 58;
   }
-  .undo-friendship-19 {
+  .btn-undo-2 span {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
     height: 22px;
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
-    font-size: 14.777349472045898px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     text-align: left;
     white-space: nowrap;
     z-index: 59;
   }
-  .conectados-ha-dias {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 22.166px;
-    top: 690.313px;
-    left: 249.104px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 22.16602325439453px;
-    font-weight: 400;
-    line-height: 22.166px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 8;
+
+  .btn-undo-2:hover {
+    background: #0D0D0D;
+
   }
+
   .retang-third-line {
     position: absolute;
     width: 1920px;
@@ -746,24 +689,43 @@
     border-radius: 13px;
     cursor: pointer;
   }
-  .amanda-ribeiro {
+  
+  .name-3 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
     height: 37.999px;
-    top: 872.391px;
-    left: 248.048px;
+    top: 837px;
+    left: 260px;
     color: #fff9f9;
     font-family: Questrial, var(--default-font-family);
-    font-size: 36.94337463378906px;
+    font-size: 33px;
     font-weight: 400;
-    line-height: 37.999px;
+    line-height: 38px;
     text-align: left;
     white-space: nowrap;
     z-index: 11;
   }
-  .desfazer-amizade {
+
+  .connected-days-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 22.166px;
+    top: 907px;
+    left: 260px;
+    color: #fff9f9;
+    font-family: Questrial, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+  } 
+
+  .btn-undo-3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -772,8 +734,8 @@
     position: absolute;
     width: 217.438px;
     height: 79.164px;
-    top: 882.419px;
-    left: 576.844px;
+    top: 846px;
+    left: 560px;
     padding: 5.805px 12.666px 5.805px 12.666px;
     cursor: pointer;
     background: #1e1e1e;
@@ -782,44 +744,24 @@
     border-radius: 7.916px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  .desfazer {
+  .icon-undo-3 {
     flex-shrink: 0;
     position: relative;
-    width: 25.333px;
-    height: 20.583px;
-    background: url(./assets/images/eb3986bd-cc95-489d-8178-8caeb8509638.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 61;
   }
-  .desfazer-amizade-21 {
+  .btn-undo-3 span {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
     height: 22px;
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
-    font-size: 14.777349472045898px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     text-align: left;
     white-space: nowrap;
-    z-index: 62;
   }
-  .conectados-ha-mes {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 22.166px;
-    top: 942.056px;
-    left: 248.048px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 22.16602325439453px;
-    font-weight: 400;
-    line-height: 22.166px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 9;
-  }  
+  .btn-undo-3:hover {
+    background: #0D0D0D;
+
+  }
