@@ -25,32 +25,35 @@ public class Amigos {
     @Column(name = "username", length = 50, nullable = true, unique = true)
     private String username;
 
-
-    public int getId(){
+    public int getId() {
         return id_usuario;
     }
-    public void setId(int id_usuario){
+
+    public void setId(int id_usuario) {
         this.id_usuario = id_usuario;
     }
-    
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
-    public void setId(String nome){
+
+    public void setId(String nome) {
         this.nome = nome;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
-    public void setEmail(String email){
+
+    public void setEmail(String email) {
         this.email = email;
     }
-    
-    public String getUsername(){
+
+    public String getUsername() {
         return username;
     }
-    public void setUsername(String username){
+
+    public void setUsername(String username) {
         this.username = username;
     }
 

@@ -8,7 +8,7 @@ public class IndexController {
 
     @GetMapping("/index")
     public String texto() {
-        return "aaaaaaaaaaaa tô com depressãooooooo";
+        return "teste";
     }
 
 }

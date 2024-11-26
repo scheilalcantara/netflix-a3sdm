@@ -1,182 +1,179 @@
 :root {
-    --default-font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-      "Ubuntu", "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
-  .main-container {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: black;
-    overflow: hidden;
-  }
-  .logo {
-    position: relative;
-    margin: 140px 0 0 660px;
-  }
-  .menu-reprodu {
-    position: relative;
-    width: 1800px;
-    height: 120px;
-    margin: 30px 0 0 58.1px;
-  }
-  .first-line {
-    position: relative;
-    width: 1800px;
-    height: 23px;
-  }
-  .time {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 22.262px;
-    top: 0;
-    left: 1708px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 22.262px;
-    text-align: left;
-    white-space: nowrap;
-    cursor: default;
-  }
-  .barra-reprodu {
-    position: absolute;
-    top: 3.258px;
-    left: 0;
-  }
+  --default-font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Ubuntu", "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
 
-  .second-line {
-    position: relative;
-    width: 1800px;
-    height: 56px;
-    margin: 20px 0 0 9.774px;
-    z-index: 24;
-  }
+* {
+  margin: auto;
+}
 
-  .play {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    cursor: pointer;
-  }
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: black;
+  overflow: hidden;
+}
 
-  .voltar-time {
-    position: absolute;
-    top: 5px;
-    left: 96.083px;
-    cursor: pointer;
-  }
+.logo {
+  position: relative;
+  margin: 140px 0 0 660px;
+}
 
-  .avancar {
-    position: absolute;
-    top: 5px;
-    left: 10.73%;
-    cursor: pointer;
-  }
+.menu-reprodu {
+  position: relative;
+  width: 1800px;
+  height: 120px;
+  margin: 30px 0 0 58.1px;
+}
 
-  .volume {
-    position: absolute;
-    top: 5px;
-    left: 300.628px;
-    cursor: pointer;
-  }
+.first-line {
+  position: relative;
+  width: 1800px;
+  height: 23px;
+}
 
-  .lbl-ep{
-    position: absolute;
-    height: 27.692px;
-    top: 5px;
-    left: 730px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 29px;
-    text-align: center;
-    white-space: nowrap;
-    cursor: default;
-  }
+.time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 22.262px;
+  top: 0;
+  left: 1708px;
+  color: #fff9f9;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22.262px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: default;
+}
 
-  .prox {
-    position: absolute;
-    top: 5px;
-    left: 1250px;
-    cursor: pointer;
-  }
+.barra-reprodu {
+  position: absolute;
+  top: 3.258px;
+  left: 0;
+}
 
-  .episodios {
-    position: absolute;
-    top: 5px;
-    left: 1329px;
-    cursor: pointer;
-  }
+.second-line {
+  position: relative;
+  width: 1800px;
+  height: 56px;
+  margin: 20px 0 0 9.774px;
+  z-index: 24;
+}
 
-  .add-user {
-    position: absolute;
-    width: 54px;
-    height: 44px;
-    left: 1416px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.play {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  cursor: pointer;
+}
 
-  .idioma {
-    position: absolute;
-    top: 5px;
-    left: 1515px;
-    cursor: pointer;
-  }
+.voltar-time {
+  position: absolute;
+  top: 5px;
+  left: 96.083px;
+  cursor: pointer;
+}
 
-  .velocidade {
-    position: absolute;
-    left: 1602px;
-    cursor: pointer;
-  }
+.avancar {
+  position: absolute;
+  top: 5px;
+  left: 10.73%;
+  cursor: pointer;
+}
 
-  .max {
-    position: absolute;
-    top: 5px;
-    left: 1700px;
-    cursor: pointer;
-  }
+.volume {
+  position: absolute;
+  top: 5px;
+  left: 300.628px;
+  cursor: pointer;
+}
 
-  .voltar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 5.43px;
-    position: absolute;
-    width: 74.389px;
-    height: 32.579px;
-    top: 46px;
-    left: 56px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.lbl-ep {
+  position: absolute;
+  height: 27.692px;
+  top: 5px;
+  left: 730px;
+  color: #fff9f9;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: default;
+}
 
-  .flag {
-    position: absolute;
-    width: 1.62%;
-    height: 3.42%;
-    top: 4.52%;
-    left: 95.38%;
-    background: url(./assets/images/55707df2-7677-42d2-9416-24f03f36a70a.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 27;
-  }
-  
+.prox {
+  position: absolute;
+  top: 5px;
+  left: 1250px;
+  cursor: pointer;
+}
+
+.episodios {
+  position: absolute;
+  top: 5px;
+  left: 1329px;
+  cursor: pointer;
+}
+
+.add-user {
+  position: absolute;
+  width: 54px;
+  height: 44px;
+  left: 1416px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.idioma {
+  position: absolute;
+  top: 5px;
+  left: 1515px;
+  cursor: pointer;
+}
+
+.velocidade {
+  position: absolute;
+  left: 1602px;
+  cursor: pointer;
+}
+
+.max {
+  position: absolute;
+  top: 5px;
+  left: 1700px;
+  cursor: pointer;
+}
+
+.voltar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 5.43px;
+  position: absolute;
+  width: 74.389px;
+  height: 32.579px;
+  top: 46px;
+  left: 56px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flag {
+  position: absolute;
+  width: 1.62%;
+  height: 3.42%;
+  top: 4.52%;
+  left: 95.38%;
+}
