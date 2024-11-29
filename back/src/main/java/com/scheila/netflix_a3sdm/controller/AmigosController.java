@@ -1,7 +1,6 @@
 package com.scheila.netflix_a3sdm.controller;
 
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.scheila.netflix_a3sdm.model.Amigos;
-import com.scheila.netflix_a3sdm.repository.AmigosRepo;
 import com.scheila.netflix_a3sdm.service.AmigosService;
 
 import org.springframework.web.bind.annotation.PostMapping;

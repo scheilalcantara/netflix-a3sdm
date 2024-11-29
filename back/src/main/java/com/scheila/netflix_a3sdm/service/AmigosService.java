@@ -35,6 +35,5 @@ public class AmigosService {
     public Boolean excluirAmigos(Integer id) {
         repository.deleteById(id);
         return true;
-
     }
 }
