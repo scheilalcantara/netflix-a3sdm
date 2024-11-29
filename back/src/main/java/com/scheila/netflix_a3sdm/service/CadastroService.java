@@ -1,7 +1,7 @@
 package com.scheila.netflix_a3sdm.service;
 
-import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.scheila.netflix_a3sdm.model.Cadastro;
@@ -11,30 +11,21 @@ import com.scheila.netflix_a3sdm.repository.CadastroRepo;
 @Service
 public class CadastroService {
 
-    private CadastroRepo repository;
+    @Autowired
+    private CadastroRepo cadastroRepository;
 
-    public CadastroService(CadastroRepo repository) {
-        this.repository = repository;
-    }
+    public Cadastro registrarUsuario(Cadastro cadastro) throws Exception {
+        // Verifica se o email já está cadastrado
+        if (cadastroRepository.findByEmail(cadastro.getEmail()) != null) {
+            throw new Exception("Email já está em uso.");
+        }
 
-    public List<Cadastro> listarCadastro() {
-        List<Cadastro> lista = (List<Cadastro>) repository.findAll();
-        return lista;
-    }
+        // Verifica se o username já está cadastrado
+        if (cadastroRepository.findByUsername(cadastro.getUsername()) != null) {
+            throw new Exception("Username já está em uso.");
+        }
 
-    public Cadastro criarCadastro(Cadastro cadastro) {
-        Cadastro cadastroNovo = repository.save(cadastro);
-        return cadastroNovo;
-
-    }
-
-    public Cadastro editarCadastro(Cadastro cadastro) {
-        Cadastro cadastroNovo = repository.save(cadastro);
-        return cadastroNovo;
-    }
-
-    public Boolean excluirCadastro(Integer id) {
-        repository.deleteById(id);
-        return true;
+        // Salva o usuário
+        return cadastroRepository.save(cadastro);
     }
 }
