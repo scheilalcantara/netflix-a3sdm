@@ -10,6 +10,7 @@ import com.scheila.netflix_a3sdm.model.Cadastro;
 
 import com.scheila.netflix_a3sdm.repository.CadastroRepo;
 
+
 @Service
 public class CadastroService {
 
@@ -52,4 +53,5 @@ public class CadastroService {
         return valid;
 
     }
+
 }

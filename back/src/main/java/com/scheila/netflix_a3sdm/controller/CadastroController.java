@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.scheila.netflix_a3sdm.model.Cadastro;
 import com.scheila.netflix_a3sdm.service.CadastroService;
 
@@ -63,14 +64,6 @@ public class CadastroController {
         return ResponseEntity.status(204).build();
     }
 
-    @PostMapping("/usuarios")
-    public ResponseEntity <Cadastro> validarSenha(@Valid @RequestBody Cadastro cadastro) {
-        Boolean valid = cadastroService.validarSenha(cadastro);
-        if (!valid){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        }
-        return ResponseEntity.status(200).build(); 
-    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)

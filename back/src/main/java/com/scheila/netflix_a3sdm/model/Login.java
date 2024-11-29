@@ -21,9 +21,6 @@ public class Login {
     @Column(name = "id_usuario")
     private int id_usuario;
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idLogin;
-
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
 

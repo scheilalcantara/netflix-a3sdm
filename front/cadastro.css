@@ -25,7 +25,7 @@
   z-index: 12;
 }
 
-.form-cadastro {
+.div-form-cadastro {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ form {
   align-items: center;
 }
 
-.form-cadastro input:hover {
+.div-form-cadastro input:hover {
   background-color: #3a3a3a;
 
 }
@@ -127,14 +127,6 @@ form {
   overflow: hidden;
   border-radius: 7px;
 }
-
-/*.toggle-senha{
-    width: 35px;
-    height: 40px;
-    flex-shrink: 0;
-    background: none;
-    border: none;
-  } */
 
 .btn-cadastrar {
   width: 530px;
