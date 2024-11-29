@@ -4,9 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.scheila.netflix_a3sdm.model.Login;
 
-public interface LoginRepo extends JpaRepository<Login, Long> {
-    Login findByEmailAndSenha(String email, String senha); // Busca por e-mail e a senha
+public interface LoginRepo  extends JpaRepository<Login, Integer>{
 
-    public Login findByUsernameAndSenha(String username, String senha);
+    Login findByEmailAndSenha(String email, String senha);
 }
 

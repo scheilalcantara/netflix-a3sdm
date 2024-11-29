@@ -1,29 +1,41 @@
-function abrirPopup() {
-    document.getElementById("popup").style.display = "flex";
-}
+const formulario = document.querySelector("form");
+const botao = document.querySelector("button");
+const Inome = document.querySelector(".input-nome");
+const Iemail = document.querySelector(".input-email");
+const Iusername = document.querySelector(".input-username");
+const Isenha = document.querySelector(".input-senha");
 
-function fecharPopup() {
-    document.getElementById("popup").style.display = "none";
-}
+function cadastrar() {
 
-function amizade() {
-
-    fetch("http://localhost:8080/amigos",
+    fetch("http://localhost:8080/cadastro",
         {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             },
-
             method: "POST",
             body: JSON.stringify({
-
-
-
+                nome: Inome.value,
+                email: Iemail.value,
+                username: Iusername.value,
+                senha: Isenha.value
             })
-
         })
-        .then(function (res) { console.log(res) })
-        .catch(function (res) { console.log(res) })
+        .then(function (res) {console.log (res) })
+        .catch(function (res) {console.log (res)})
 
-}
+};
+
+function limpar() {
+    Inome.value = "";
+    Iemail.value = "";
+    Iusername.value = "";
+    Isenha.value = "";
+};
+
+formulario.addEventListener('submit', function (event){
+    event.preventDefault();
+
+    cadastrar();
+    limpar();
+});

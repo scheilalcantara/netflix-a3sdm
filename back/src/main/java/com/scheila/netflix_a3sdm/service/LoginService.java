@@ -12,9 +12,10 @@ public class LoginService {
     @Autowired
     private LoginRepo loginRepository;
 
-    public boolean validarLogin(String username, String senha) {
+    public boolean validarLogin(String email, String senha) {
+        
         // Busca o login com base no username e senha
-        Login login = loginRepository.findByUsernameAndSenha(username, senha);
+        Login login = loginRepository.findByEmailAndSenha(email, senha);
 
         // Caso o login seja válido
         return login != null;

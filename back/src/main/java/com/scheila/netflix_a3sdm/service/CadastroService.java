@@ -1,31 +1,55 @@
 package com.scheila.netflix_a3sdm.service;
 
+import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.scheila.netflix_a3sdm.model.Cadastro;
-import com.scheila.netflix_a3sdm.repository.CadastroRepo;
 
+import com.scheila.netflix_a3sdm.repository.CadastroRepo;
 
 @Service
 public class CadastroService {
 
-    @Autowired
-    private CadastroRepo cadastroRepository;
+    private CadastroRepo repository;
+    private PasswordEncoder passwordEncoder;
 
-    public Cadastro registrarUsuario(Cadastro cadastro) throws Exception {
-        // Verifica se o email já está cadastrado
-        if (cadastroRepository.findByEmail(cadastro.getEmail()) != null) {
-            throw new Exception("Email já está em uso.");
-        }
+    public CadastroService(CadastroRepo repository) {
+        this.repository = repository;
+        this.passwordEncoder = new BCryptPasswordEncoder();
+    }
 
-        // Verifica se o username já está cadastrado
-        if (cadastroRepository.findByUsername(cadastro.getUsername()) != null) {
-            throw new Exception("Username já está em uso.");
-        }
+    public List<Cadastro> listarCadastro() {
+        List<Cadastro> lista = (List<Cadastro>) repository.findAll();
+        return lista;
+    }
 
-        // Salva o usuário
-        return cadastroRepository.save(cadastro);
+    public Cadastro criarCadastro(Cadastro cadastro) {
+        String encoder = this.passwordEncoder.encode(cadastro.getSenha());
+        cadastro.setSenha(encoder);
+        Cadastro cadastroNovo = repository.save(cadastro);
+        return cadastroNovo;
+
+    }
+
+    public Cadastro editarCadastro(Cadastro cadastro) {
+        String encoder = this.passwordEncoder.encode(cadastro.getSenha());
+        cadastro.setSenha(encoder);
+        Cadastro cadastroNovo = repository.save(cadastro);
+        return cadastroNovo;
+    }
+
+    public Boolean excluirCadastro(Integer id_usuario) {
+        repository.deleteById(id_usuario);
+        return true;
+    }
+
+    public Boolean validarSenha(Cadastro cadastro) {
+        String senha = repository.getById(cadastro.getId_usuario()).getSenha();
+        Boolean valid = passwordEncoder.matches(cadastro.getSenha(), senha);
+        return valid;
+
     }
 }

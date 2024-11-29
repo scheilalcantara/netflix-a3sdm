@@ -24,6 +24,7 @@
   height: 72.831px;
   top: 20.055px;
   left: 48.554px;
+  z-index: 2;
 }
 
 .logo {
@@ -300,13 +301,13 @@
   z-index: 24;
 }
 
-.flex-row-aaca {
+.btns-principais {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  width: 535.128px;
-  height: 48.741px;
+  width: 535px;
+  height: 49px;
   margin: 36px 0 0 0;
   z-index: 20;
 }
@@ -315,38 +316,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 5.137px;
+  gap: 5px;
   position: relative;
-  width: 136.117px;
-  height: 48.155px;
+  width: 140px;
+  height: 49px;
   padding: 8.989px 15.41px 8.989px 15.41px;
+  color: #000000;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 19px;
   cursor: pointer;
   background: #ffffff;
   border: none;
   z-index: 20;
-  border-radius: 5.137px;
-  box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
-}
-
-.btn-assistir span {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 60px;
-  height: 28px;
-  color: #000000;
-  font-family: Questrial, var(--default-font-family);
-  font-size: 18.771486282348633px;
-  font-weight: 450;
-  line-height: 28px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 22;
+  border-radius: 5px;
 }
 
 .btn-assistir:hover {
@@ -355,11 +337,6 @@
   color: #ffffff;
 
 }
-
-.btn-assistir span:hover {
-  color: #ffffff;
-}
-
 
 .polygon {
   flex-shrink: 0;
@@ -375,37 +352,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 5.137px;
   position: relative;
-  width: 171.431px;
-  height: 48.155px;
+  width: 172px;
+  height: 49px;
   padding: 8.989px 15.41px 8.989px 15.41px;
   cursor: pointer;
   background: #5e5e5e;
   border: none;
   z-index: 14;
-  border-radius: 5.137px;
-  box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
 }
 
 .btn-minha-lista span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 97.377px;
-  height: 26.397px;
+  margin: 0px 0px 0px 20px;
+  position: absolute;
   color: #ffffff;
   font-family: Questrial, var(--default-font-family);
-  font-size: 18.771486282348633px;
-  font-weight: 400;
-  line-height: 26.397px;
-  text-align: right;
-  white-space: nowrap;
+  font-size: 19px;
   z-index: 16;
 }
 
@@ -415,14 +381,9 @@
   color: #ffffff;
 }
 
-
 .mais {
-  flex-shrink: 0;
-  position: relative;
-  width: 15.252px;
-  height: 15.252px;
-  background: url() no-repeat center;
-  background-size: 100% 100%;
+  position: absolute;
+  margin: 0px 115px 0px 0px;
   z-index: 15;
 }
 
@@ -430,37 +391,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 5.137px;
+  gap: 5px;
   position: relative;
-  width: 171.431px;
-  height: 48.155px;
+  width: 176px;
+  height: 49px;
   padding: 8.989px 15.41px 8.989px 15.41px;
   cursor: pointer;
   background: #5e5e5e;
   border: none;
   z-index: 17;
-  border-radius: 5.137px;
-  box-shadow: 0 0.64px 1.284px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
 }
 
 .btn-recomendar span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 113.802px;
-  height: 32.263px;
+  margin: 0px 0px 0px 25px;
+  position: absolute;
   color: #ffffff;
   font-family: Questrial, var(--default-font-family);
-  font-size: 18.771486282348633px;
-  font-weight: 400;
-  line-height: 32.263px;
+  font-size: 19px;
   text-align: right;
-  white-space: nowrap;
   z-index: 19;
 }
 
@@ -472,12 +424,8 @@
 
 
 .send {
-  flex-shrink: 0;
-  position: relative;
-  width: 17.012px;
-  height: 17.012px;
-  background: url() no-repeat center;
-  background-size: 100% 100%;
+  position: absolute;
+  margin: 0px 125px 0px 0px;
   z-index: 18;
 }
 
@@ -647,7 +595,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1;
 }
 
 .background-container img {

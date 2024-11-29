@@ -1,231 +1,192 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }
-  
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
-  .main-container {
-    position: relative;
-    width: 1920px;
-    height: 1049.72px;
-    margin: 0 auto;
-    background: url(../assets/images/9baaa5e283d4209eb2d6bbef1fbf1367701e78fb.png)
-      no-repeat center;
-    background-size: cover;
-    overflow: hidden;
-    box-shadow: 0 75px 100px 0 rgba(0, 0, 0, 0.6) inset;
-  }
-  .image-netflix {
-    position: relative;
-    width: 335px;
-    height: 91px;
-    margin: 29px 0 0 42px;
-    background: url(./assets/images/5b4c11bce82beebebaeb169c98504de3f5733e95.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 12;
-  }
-  .rectangle {
-    position: absolute;
-    width: 1920px;
-    height: 1049.72px;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.45);
-  }
-  .form-cadastro {
-    position: absolute;
-    width: 777px;
-    height: 815px;
-    top: 174px;
-    left: 571px;
-    background: rgba(0, 0, 0, 0.85);
-    opacity: 0.85;
-    z-index: 1;
-    border-radius: 20px;
-  }
-  .lbl-cadastrar {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 49px;
-    top: 236px;
-    left: 859px;
-    color: #fff9f9;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 49px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 11;
-  }
-  .input-nome {
-    position: absolute;
-    width: 495px;
-    height: 72px;
-    top: 342px;
-    left: 712px;
-    background: #413f3f;
-    z-index: 2;
-    overflow: hidden;
-    border-radius: 7px;
-  }
-  .span-nome {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 38px;
-    top: 359px;
-    left: 740px;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Questrial, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32.96px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 9;
-  }
-  .input-email {
-    position: absolute;
-    width: 495px;
-    height: 72px;
-    top: 471px;
-    left: 712px;
-    background: #413f3f;
-    z-index: 13;
-    overflow: hidden;
-    border-radius: 7px;
-  }
-  .span-txt-email {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 33px;
-    top: 491px;
-    left: 740px;
-    color: #ffffff;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32.96px;
-    text-align: left;
-    white-space: nowrap;
-    opacity: 0.5;
-    z-index: 14;
-  }
-  .input-username {
-    position: absolute;
-    width: 495px;
-    height: 72px;
-    top: 600px;
-    left: 712px;
-    background: #413f3f;
-    z-index: 3;
-    overflow: hidden;
-    border-radius: 7px;
-  }
-  .user-name {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 33px;
-    top: 620px;
-    left: 740px;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Questrial, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32.96px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 10;
-  }
-  .input-senha {
-    position: absolute;
-    width: 495px;
-    height: 72px;
-    top: 729px;
-    left: 712px;
-    background: #413f3f;
-    z-index: 4;
-    overflow: hidden;
-    border-radius: 7px;
-  }
-  .password {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 33px;
-    top: 749px;
-    left: 740px;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Questrial, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32.96px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 8;
-  }
-  .btn-cadastro {
-    position: absolute;
-    width: 273px;
-    height: 72px;
-    top: 858px;
-    left: 827px;
-    cursor: pointer;
-    font-size: 0px;
-    background: transparent;
+  --default-font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Ubuntu", "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+* {
+  margin: auto;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  margin: none;
+  padding: none;
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image-netflix {
+  position: relative;
+  margin: 29px 0 0 42px;
+  z-index: 12;
+}
+
+.form-cadastro {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 696px;
+  height: 820px;
+  top: 110px;
+  left: 612px;
+  background: rgba(8, 8, 8, 0.9);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-cadastro input:hover {
+  background-color: #3a3a3a;
+
+}
+
+.lbl-cadastrar {
+  margin: 0px 335px 40px 0px;
+  color: #fff9f9;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: default;
+  z-index: 11;
+}
+
+.input-nome {
+  width: 470px;
+  height: 72px;
+  background: #272626;
+  padding: 0px 30px 0px 30px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 26px;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.input-email {
+  width: 470px;
+  height: 72px;
+  background: #272626;
+  margin: 30px 0px 30px 0px;
+  padding: 0px 30px 0px 30px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 26px;
+  z-index: 13;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.input-username {
+  width: 470px;
+  height: 72px;
+  background: #272626;
+  padding: 0px 30px 0px 30px;
+  margin: 0px 0px 30px 0px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 26px;
+  z-index: 3;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.input-senha {
+  width: 470px;
+  height: 72px;
+  background: #272626;
+  padding: 0px 30px 0px 30px;
+  margin: 0px 0px 50px 0px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 26px;
+  z-index: 4;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+/*.toggle-senha{
+    width: 35px;
+    height: 40px;
+    flex-shrink: 0;
+    background: none;
     border: none;
-    z-index: 5;
-    border-radius: 7px;
-  }
-  .lbl-btn-cadastrar {
-    display: block;
-    position: relative;
-    height: 33px;
-    margin: 20px 0 0 64px;
-    color: #ffffff;
-    font-family: Questrial, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32.96px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 7;
-  }
-  .btn-cadastrar {
-    position: absolute;
-    width: 273px;
-    height: 72px;
-    top: 0;
-    left: 0;
-    background: #e50914;
-    z-index: 6;
-    border-radius: 7px;
-  }
-  
+  } */
+
+.btn-cadastrar {
+  width: 530px;
+  height: 72px;
+  margin: 0px 0px 30px 0px;
+  background: #e50914;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 28px;
+  border: none;
+  z-index: 6;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btn-cadastrar:hover {
+  background: #b40810;
+
+}
+
+.lbl-login {
+  color: #b1b1b1;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 22px;
+  margin: 0px 355px 30px 0px;
+  cursor: default;
+}
+
+.login-link {
+  color: #fff9f9;
+  font-family: Questrial, var(--default-font-family);
+  font-size: 22px;
+  margin: -53px 20px 8px 0px;
+}
+
+.login-link :hover {
+  border-bottom: #ffffff solid 1px;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-container img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
