@@ -24,8 +24,17 @@ async function cadastrar() {
             })
         })
 
-        .then(function (resposta) {console.log (resposta) })
-        .catch(function (resposta) {console.log (resposta)})
+        .then(resposta => {
+            if (resposta.ok){
+                window.location.href="http://127.0.0.1:8081/front/login.html"
+            } else {
+                alert("Erro ao realizar cadastro. Por gentileza tente outra vez!");
+            }
+        })
+        
+        .catch(error =>{
+            console.error("Erro: ", error);
+        })
 
 };
 

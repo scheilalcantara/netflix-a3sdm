@@ -7,6 +7,7 @@
   <title>Login - Netflix</title>
   <link rel="shortcut icon" type="image/png" href="img/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" />
+  <script src="login.js" defer></script>
   <link rel="stylesheet" href="login.css" />
 </head>
 
@@ -19,13 +20,12 @@
 
     <div class="form-login">
 
-      <form action="index.html">
-
+      <form>
         <span class="lbl-entrar">Entrar</span>
 
-        <input class="input-email" type="text" placeholder="Email ou username" />
+        <input class="input-email" id="email" type="text" placeholder="Email" />
 
-        <input class="input-senha" type="password" placeholder="Senha" />
+        <input class="input-senha" id="senha" type="password" placeholder="Senha" />
 
         <button class="btn-entrar">Entrar</button>
 
@@ -35,7 +35,6 @@
           <a href="cadastro.html" style="text-decoration: none;color: #ffff;">
             Cadastre-se </a>
         </div>
-
       </form>
     </div>
 

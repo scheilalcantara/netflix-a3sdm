@@ -6,6 +6,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,9 +27,13 @@ public class Login {
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
 
+    @Email (message = "Insira um email válido")
+    @NotBlank(message = "Email obrigatório")
     @Column(name = "email", length = 50, nullable = false, unique = true)
     private String email;
 
+    @Size (min = 4, message = "Mínimo de 4 caracteres")
+    @NotBlank(message = "Senha obrigatória")
     @Column(name = "senha", columnDefinition = "TEXT", nullable = false)
     private String senha;
 
