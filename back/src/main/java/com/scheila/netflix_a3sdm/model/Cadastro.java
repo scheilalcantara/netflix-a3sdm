@@ -1,10 +1,13 @@
 package com.scheila.netflix_a3sdm.model;
 
+
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -35,13 +38,20 @@ public class Cadastro {
     @Column(name = "email", length = 50, nullable = false, unique = true)
     private String email;
 
-    @Size (min = 4, message = "Mínimo de 4 caracteres")
-    @NotBlank(message = "Senha obrigatória")
-    @Column(name = "senha", columnDefinition = "TEXT", nullable = false)
-    private String senha;
 
     @NotBlank(message = "Username obrigatório")
     @Column(name = "username", length = 50, nullable = false, unique = true)
     private String username;
 
+    @Size (min = 4, message = "Mínimo de 4 caracteres")
+    @NotBlank(message = "Senha obrigatória")
+    @Column(name = "senha", columnDefinition = "TEXT", nullable = false)
+    private String senha;
+
+    
+
+    //@OneToMany
+    //@JoinColumn (name = "usuario_1")
+   // @JoinColumn (name = "usuario_2")
+   // private List<Amigos> amigos;
 }

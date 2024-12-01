@@ -4,46 +4,53 @@ const Iemail = document.getElementById("email");
 const Isenha = document.getElementById("senha");
 
 
-async function logar() {
+async function logar(email, senha) {
 
-    let resp = await fetch('http://localhost:8080/login',
+    const url = "http://localhost:8080/login";
+
+
+    const dados = {
+
+        emal: Iemail.value,
+        senha: Isenha.value
+    };
+
+    try{
+
+    const response = await fetch(url,
         {
             method: "POST",
             headers: {
-                "Accept": "application/json",
                 "Content-Type": "application/json"
             },
-            method: "POST",
-            body: JSON.stringify({
-
-                email: Iemail.value,
-                senha: Isenha.value,
-            })
+            body: JSON.stringify(dados)
         });
 
-            if (!resp.ok) {
-                alert("Erro fetch");
-            }
+    if (!response.ok) {
+        const erro = await response.json();
+        alert("Erro: " + (erro.error || "E-mail ou senha inválidos."));
+        return;
+    }
 
-            const data = await resp.json();
+    const resultado = await response.json();
+    alert(`Bem-vindo, ${resultado.nome}!`);
+    console.log(resultado);
+    window.location.href = "http://127.0.0.1:8081/front/index.html"
 
-            if(data.sucesse) {
-                 window.location.href="http://127.0.0.1:8081/front/index.html"
-
-            } else {  
-                alert("Erro ao realizar login. Por gentileza tente outra vez!");
-
-            }
-
+} catch (erro) {
+    alert("Erro ao conectar ao servidor.");
+    console.error("Erro na requisição:", erro);
+}
+       
 };
 
 function clear() {
-  
+
     Iemail.value = "";
     Isenha.value = "";
 };
 
-formulario.addEventListener('submit', function (event){
+formulario.addEventListener('submit', function (event) {
     event.preventDefault();
 
     logar();

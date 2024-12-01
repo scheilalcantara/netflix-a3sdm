@@ -22,7 +22,6 @@ public class LoginService {
         this.passwordEncoder = new BCryptPasswordEncoder();
     }
 
-        
     public List<Login> listarLogins() {
         List<Login> lista = (List<Login>) repository.findAll();
         return lista;
@@ -35,16 +34,20 @@ public class LoginService {
         return loginNovo;
     }
 
+    public String validarLogin(Login login) {
+        Login usuario = repository.findByEmail(login.getEmail());
 
-    public Boolean validarSenha(Login login) {
-        String senha = repository.getById(login.getId_usuario()).getSenha();
-        Boolean valid = passwordEncoder.matches(login.getSenha(), senha);
-        return valid;
+        if(usuario == null) {
+            return "Email não encontrado";
+
+        }
+        Boolean senhaValida = passwordEncoder.matches(login.getSenha(), usuario.getSenha());
+
+        if(!senhaValida) {
+            return "Senha incorreta";
+
+        }
+        
+        return "Login válido";
     }
-
-    public Boolean validarLogin(String email, String senha) {
-        Login login = repository.findByEmailAndSenha(email, senha);
-        return login != null;
-    }
-
 }

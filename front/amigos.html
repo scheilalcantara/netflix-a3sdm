@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="img/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
-  <script src="script.js" defer></script>
+  <script src="amigos.js" defer></script>
   <link rel="stylesheet" href="amigos.css" />
 </head>
 
@@ -54,16 +54,14 @@
 
     <div class="field-pesquisar">
 
-      <form action="" method="get">
         <div class="lupa-field">
           <img src="img/lupa.png" width="25px" height="22px">
         </div>
   
-        <input type="search" class="pesquisar-input" placeholder="Pesquisar perfis" required/>
+        <input type="search" id ="pesquisar-input" class="pesquisar-input" placeholder="Pesquisar perfis" required oninput="buscarCadastro(this.value)"/>
       </div>
-
-      </form>
-
+      
+      <div id="results"></div>
 
     <span class="lbl-amigos">Amigos</span>
 
@@ -137,7 +135,6 @@
     </div>
     <span>Desfazer amizade</span>
   </button>
-
 
   <div class="retang-third-line"></div>
 

@@ -296,6 +296,26 @@
   outline: none;
 }
 
+#results{
+display: flex;
+align-items: flex-start;
+flex-wrap: nowrap;
+gap: 7.916px;
+position: absolute;
+width: 435px;
+height: 600px;
+top: 230px;
+left: 1405px;
+font-family: Inter, var(--default-font-family);
+color: #0000;
+font-size: 18px;
+background: rgba(40, 40, 40, 0.98) ;
+border: none;
+z-index: 67;
+outline: none;
+}
+
+
 .lbl-amigos {
   display: flex;
   align-items: flex-start;

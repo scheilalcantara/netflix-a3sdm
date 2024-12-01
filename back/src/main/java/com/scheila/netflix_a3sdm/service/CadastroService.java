@@ -2,6 +2,7 @@ package com.scheila.netflix_a3sdm.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -10,10 +11,10 @@ import com.scheila.netflix_a3sdm.model.Cadastro;
 
 import com.scheila.netflix_a3sdm.repository.CadastroRepo;
 
-
 @Service
 public class CadastroService {
-
+    
+    @Autowired
     private CadastroRepo repository;
     private PasswordEncoder passwordEncoder;
 

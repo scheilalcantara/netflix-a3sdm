@@ -20,12 +20,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.scheila.netflix_a3sdm.model.Cadastro;
 import com.scheila.netflix_a3sdm.service.CadastroService;
 
 import jakarta.validation.Valid;
-
 
 @RestController
 @CrossOrigin("*")
@@ -39,7 +37,7 @@ public class CadastroController {
 
     }
 
-        // listar
+    // listar
     @GetMapping
     public ResponseEntity<List<Cadastro>> listarCadastro() {
         return ResponseEntity.status(200).body(cadastroService.listarCadastro());
@@ -64,14 +62,13 @@ public class CadastroController {
         return ResponseEntity.status(204).build();
     }
 
-
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public Map<String, String> handleValidationException(MethodArgumentNotValidException ex){
+    public Map<String, String> handleValidationException(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
 
         ex.getBindingResult().getAllErrors().forEach((error) -> {
-            String fieldName = ((FieldError)error).getField();
+            String fieldName = ((FieldError) error).getField();
             String errorMessage = error.getDefaultMessage();
             errors.put(fieldName, errorMessage);
 

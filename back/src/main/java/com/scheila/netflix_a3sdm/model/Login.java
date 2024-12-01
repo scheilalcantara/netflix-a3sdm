@@ -32,13 +32,19 @@ public class Login {
     @Column(name = "email", length = 50, nullable = false, unique = true)
     private String email;
 
+    @Column(name = "username", length = 50, nullable = false, unique = true)
+    private String username;
+
     @Size (min = 4, message = "Mínimo de 4 caracteres")
     @NotBlank(message = "Senha obrigatória")
     @Column(name = "senha", columnDefinition = "TEXT", nullable = false)
     private String senha;
 
-    @Column(name = "username", length = 50, nullable = false, unique = true)
-    private String username;
+    public String findByEmail(String email) {
+        throw new UnsupportedOperationException("Unimplemented method 'findByEmail'");
+    }
+
+
 
 }
 

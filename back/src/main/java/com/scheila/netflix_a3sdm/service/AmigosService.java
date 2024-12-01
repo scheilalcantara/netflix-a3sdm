@@ -2,6 +2,7 @@ package com.scheila.netflix_a3sdm.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.scheila.netflix_a3sdm.model.Amigos;
@@ -10,6 +11,7 @@ import com.scheila.netflix_a3sdm.repository.AmigosRepo;
 @Service
 public class AmigosService {
 
+    @Autowired
     private AmigosRepo repository;
 
     public AmigosService(AmigosRepo repository) {
